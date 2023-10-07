@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "Corporate Leadership Summit",
+    "category": "Corporate",
+    "date": "2023-11-15",
+    "location": "New York, NY",
+    "description": "Join top executives and thought leaders at our Corporate Leadership Summit to discuss the future of business leadership.",
+    "image": "https://images.pexels.com/photos/518244/pexels-photo-518244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "price": 199.99,
+    "shortDescription": "Explore the future of corporate leadership!",
+    "buttonLabel": "Register Now"
+  },
+  {
+    "id": "2",
+    "name": "Global Business Conference",
+    "category": "Corporate",
+    "date": "2023-10-20",
+    "location": "London, UK",
+    "description": "Network with international business professionals and gain insights into global market trends.",
+    "image": "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "price": 149.99,
+    "shortDescription": "Connect with global business leaders!",
+    "buttonLabel": "Get Tickets"
+  },
+  {
+    "id": "3",
+    "name": "Corporate Sustainability Forum",
+    "category": "Corporate",
+    "date": "2023-09-05",
+    "location": "San Francisco, CA",
+    "description": "Learn about sustainable business practices and how to make your company more environmentally friendly.",
+    "image": "https://images.pexels.com/photos/5324941/pexels-photo-5324941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "price": 129.99,
+    "shortDescription": "Promote corporate sustainability!",
+    "buttonLabel": "Join Forum"
+  },
+  {
+    "id": "4",
+    "name": "Executive Networking Symposium",
+    "category": "Corporate",
+    "date": "2023-12-08",
+    "location": "Chicago, IL",
+    "description": "Connect with industry executives, exchange ideas, and explore potential collaborations.",
+    "image": "https://images.pexels.com/photos/7710144/pexels-photo-7710144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "price": 99.99,
+    "shortDescription": "Expand your corporate network!",
+    "buttonLabel": "Book Now"
+  },
+  {
+    "id": "5",
+    "name": "Corporate Strategy Workshop",
+    "category": "Corporate",
+    "date": "2023-11-01",
+    "location": "Los Angeles, CA",
+    "description": "Enhance your corporate strategy skills through interactive workshops and case studies.",
+    "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "price": 179.99,
+    "shortDescription": "Master corporate strategic planning!",
+    "buttonLabel": "Reserve Your Spot"
+  },
+  {
+    "id": "6",
+    "name": "Digital Transformation Conference",
+    "category": "Corporate",
+    "date": "2023-09-25",
+    "location": "Houston, TX",
+    "description": "Discover the latest technologies and strategies for successful digital transformations in business.",
+    "image": "https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "price": 159.99,
+    "shortDescription": "Lead in the era of digital transformation!",
+    "buttonLabel": "Learn More"
+  }
+]
