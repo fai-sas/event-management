@@ -60,27 +60,25 @@ const Navbar = () => {
           <li className='px-4 text-lg font-bold'>
             <NavLink to='/services'>Services</NavLink>
           </li>
-          <li className='px-4 text-lg font-bold'>
-            <NavLink to=''></NavLink>
-          </li>
-          <li className='px-4 text-lg font-bold'>
-            <NavLink to='/'>Profile Picture</NavLink>
-          </li>
+
           <li className='px-4 text-lg font-bold'>
             <NavLink to='/login'>Login</NavLink>
           </li>
           <li className='px-4 text-lg font-bold'>
             <NavLink to='/register'>Register</NavLink>
           </li>
-
-          <li className='px-4 text-lg font-bold'>
-            {user && (
-              <NavLink onClick={handleLogOut} to='/'>
-                Logout
-              </NavLink>
-            )}
-          </li>
+          {user && (
+            <li
+              onClick={handleLogOut}
+              className='px-4 text-lg font-bold cursor-pointer'
+            >
+              Logout
+            </li>
+          )}
         </ul>
+        <div className='w-10 '>
+          <img className='rounded-full' src={user?.photoURL} />
+        </div>
       </div>
       <ToastContainer />
     </div>

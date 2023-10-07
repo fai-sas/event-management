@@ -3,9 +3,15 @@ import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../providers/AuthProvider'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { FaEye, FaEyeSlash } from 'react-icons/fa'
 
 const Login = () => {
-  const { signInUserWithEmail, signInWithGoogle } = useContext(AuthContext)
+  const {
+    signInUserWithEmail,
+    signInWithGoogle,
+    showPassword,
+    handlePassword,
+  } = useContext(AuthContext)
   const navigate = useNavigate()
 
   const handleLogin = (e) => {
@@ -22,6 +28,7 @@ const Login = () => {
         navigate('/')
       })
       .catch((error) => {
+        toast.error('Invalid Login Details')
         console.error(error)
       })
   }
@@ -59,17 +66,23 @@ const Login = () => {
                   className='input input-bordered'
                 />
               </div>
-              <div className='form-control'>
+              <div className='relative form-control'>
                 <label className='label'>
                   <span className='label-text'>Password</span>
                 </label>
                 <input
-                  type='password'
+                  type={showPassword ? 'text' : 'password'}
                   name='password'
                   required
                   placeholder='password'
                   className='input input-bordered'
                 />
+                <span
+                  className='absolute bottom-12 right-4'
+                  onClick={handlePassword}
+                >
+                  {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                </span>
                 <label className='label'>
                   <a href='#' className='label-text-alt link link-hover'>
                     Forgot password?
