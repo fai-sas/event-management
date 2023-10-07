@@ -49,13 +49,13 @@ const Navbar = () => {
             <NavLink to='/services'>Services</NavLink>
           </li>
           <li className='px-4 text-lg font-bold'>
-            <NavLink to='/donation'>User Name</NavLink>
+            <NavLink to='/'>User Name</NavLink>
           </li>
           <li className='px-4 text-lg font-bold'>
-            <NavLink to='/statistics'>Profile Picture</NavLink>
+            <NavLink to='/'>Profile Picture</NavLink>
           </li>
           <li className='px-4 text-lg font-bold'>
-            <NavLink to='/statistics'>Logout</NavLink>
+            <NavLink to='/'>Logout</NavLink>
           </li>
         </ul>
       </div>
