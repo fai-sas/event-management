@@ -1,6 +1,18 @@
 import { Link, NavLink } from 'react-router-dom'
+import { AuthContext } from '../../providers/AuthProvider'
+import { useContext } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext)
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => toast.success('user logged out successfully'))
+      .catch((error) => console.error(error))
+  }
+
   return (
     <div className='container relative z-10 p-8 mx-auto lg:pt-12 navbar'>
       <div className='navbar-start'>
@@ -49,16 +61,28 @@ const Navbar = () => {
             <NavLink to='/services'>Services</NavLink>
           </li>
           <li className='px-4 text-lg font-bold'>
-            <NavLink to='/'>User Name</NavLink>
+            <NavLink to=''></NavLink>
           </li>
           <li className='px-4 text-lg font-bold'>
             <NavLink to='/'>Profile Picture</NavLink>
           </li>
           <li className='px-4 text-lg font-bold'>
-            <NavLink to='/'>Logout</NavLink>
+            <NavLink to='/login'>Login</NavLink>
+          </li>
+          <li className='px-4 text-lg font-bold'>
+            <NavLink to='/register'>Register</NavLink>
+          </li>
+
+          <li className='px-4 text-lg font-bold'>
+            {user && (
+              <NavLink onClick={handleLogOut} to='/'>
+                Logout
+              </NavLink>
+            )}
           </li>
         </ul>
       </div>
+      <ToastContainer />
     </div>
   )
 }
