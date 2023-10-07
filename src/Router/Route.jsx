@@ -4,6 +4,7 @@ import HomePage from '../Pages/Home/HomePage'
 import ServicePage from '../Pages/ServicePage/ServicePage'
 import Login from '../components/Login/Login'
 import Register from '../components/Register/Register'
+import PrivateRoute from './PrivateRoute'
 
 // import ErrorPage from '../Pages/ErrorPage/ErrorPage'
 
@@ -26,7 +27,12 @@ const Route = createBrowserRouter([
       },
       {
         path: '/services/:id',
-        element: <ServicePage />,
+        element: (
+          <PrivateRoute>
+            {' '}
+            <ServicePage />
+          </PrivateRoute>
+        ),
         loader: () => fetch('/events.json'),
       },
       {
