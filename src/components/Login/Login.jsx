@@ -22,7 +22,8 @@ const Login = () => {
 
     signInUserWithEmail(email, password)
       .then((result) => {
-        toast.success('Successfully Logged In')
+        toast.success(`Welcome ${result.user.displayName}`)
+
         console.log(result.user)
         e.target.reset()
         navigate('/')

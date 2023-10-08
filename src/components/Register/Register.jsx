@@ -4,6 +4,7 @@ import { AuthContext } from '../../providers/AuthProvider'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
+import { updateProfile } from 'firebase/auth'
 
 const Register = () => {
   const { createUserWithEmail, showPassword, handlePassword } =
@@ -33,7 +34,17 @@ const Register = () => {
         e.target.reset()
         navigate('/login')
         console.log(result.user)
+
+        // update profile
+        updateProfile(result.user, {
+          displayName: name,
+          photoURL:
+            'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        })
+          .then(() => console.log('profile updated'))
+          .catch()
       })
+
       .catch((error) => {
         console.error(error)
       })
