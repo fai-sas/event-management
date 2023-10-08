@@ -44,12 +44,27 @@ const Navbar = () => {
               <NavLink to='/'>Home</NavLink>
             </li>
             <li className='px-4 text-lg font-bold'>
-              <NavLink to='/donation'>Donation</NavLink>
+              <NavLink to='/services'>Services</NavLink>
+            </li>
+
+            <li className='px-4 text-lg font-bold'>
+              <NavLink to='/login'>Login</NavLink>
             </li>
             <li className='px-4 text-lg font-bold'>
-              <NavLink to='/statistics'>Statistics</NavLink>
+              <NavLink to='/register'>Register</NavLink>
             </li>
+            {user && (
+              <li
+                onClick={handleLogOut}
+                className='px-4 text-lg font-bold cursor-pointer'
+              >
+                Logout
+              </li>
+            )}
           </ul>
+          <div className='w-10 '>
+            <img className='rounded-full' src={user?.photoURL} />
+          </div>
         </div>
       </div>
       <div className='hidden navbar-end lg:flex'>
