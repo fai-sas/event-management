@@ -5,6 +5,7 @@ import ServicePage from '../Pages/ServicePage/ServicePage'
 import Login from '../components/Login/Login'
 import Register from '../components/Register/Register'
 import PrivateRoute from './PrivateRoute'
+import Profile from '../Pages/Profile/Profile'
 
 // import ErrorPage from '../Pages/ErrorPage/ErrorPage'
 
@@ -42,6 +43,14 @@ const Route = createBrowserRouter([
       {
         path: '/register',
         element: <Register />,
+      },
+      {
+        path: '/profile',
+        element: (
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        ),
       },
     ],
   },

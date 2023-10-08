@@ -47,12 +47,22 @@ const Navbar = () => {
               <NavLink to='/services'>Services</NavLink>
             </li>
 
-            <li className='px-4 text-lg font-bold'>
-              <NavLink to='/login'>Login</NavLink>
-            </li>
-            <li className='px-4 text-lg font-bold'>
-              <NavLink to='/register'>Register</NavLink>
-            </li>
+            {user && (
+              <li className='px-4 text-lg font-bold'>
+                <NavLink to='/profile'>Profile</NavLink>
+              </li>
+            )}
+
+            {!user && (
+              <>
+                <li className='px-4 text-lg font-bold'>
+                  <NavLink to='/login'>Login</NavLink>
+                </li>
+                <li className='px-4 text-lg font-bold'>
+                  <NavLink to='/register'>Register</NavLink>
+                </li>
+              </>
+            )}
             {user && (
               <li
                 onClick={handleLogOut}
@@ -75,6 +85,11 @@ const Navbar = () => {
           <li className='px-4 text-lg font-bold'>
             <NavLink to='/services'>Services</NavLink>
           </li>
+          {user && (
+            <li className='px-4 text-lg font-bold'>
+              <NavLink to='/profile'>Profile</NavLink>
+            </li>
+          )}
 
           {!user && (
             <>
