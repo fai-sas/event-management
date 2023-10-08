@@ -62,9 +62,9 @@ const Navbar = () => {
               </li>
             )}
           </ul>
-          <div className='w-10 '>
+          {/* <div className='w-10 '>
             <img className='rounded-full' src={user?.photoURL} />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='hidden navbar-end lg:flex'>
@@ -76,11 +76,22 @@ const Navbar = () => {
             <NavLink to='/services'>Services</NavLink>
           </li>
 
+          {!user && (
+            <>
+              <li className='px-4 text-lg font-bold'>
+                <NavLink to='/login'>Login</NavLink>
+              </li>
+              <li className='px-4 text-lg font-bold'>
+                <NavLink to='/register'>Register</NavLink>
+              </li>
+            </>
+          )}
+
           <li className='px-4 text-lg font-bold'>
-            <NavLink to='/login'>Login</NavLink>
+            <Link to='#'>{user?.displayName}</Link>
           </li>
-          <li className='px-4 text-lg font-bold'>
-            <NavLink to='/register'>Register</NavLink>
+          <li className='w-7'>
+            <img className='object-cover rounded-full' src={user?.photoURL} />
           </li>
           {user && (
             <li
@@ -91,9 +102,6 @@ const Navbar = () => {
             </li>
           )}
         </ul>
-        <div className='w-10 '>
-          <img className='rounded-full' src={user?.photoURL} />
-        </div>
       </div>
       <ToastContainer />
     </div>

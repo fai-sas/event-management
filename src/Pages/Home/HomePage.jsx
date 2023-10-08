@@ -10,10 +10,9 @@ const HomePage = () => {
     <div className=''>
       <Banner />
       <About></About>
-   
-      {/* <Services /> */}
+      <Services />
       <CoreFeatures />
- <Contact />
+      <Contact />
       <Footer></Footer>
     </div>
   )
