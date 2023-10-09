@@ -28,9 +28,12 @@ const Navbar = () => {
       <li className='pr-4 text-lg font-semibold'>
         <ActiveLink to='/services'>Services</ActiveLink>
       </li>
-      <li className='pr-4 text-lg font-semibold'>
-        <ActiveLink to='/blog'>Blog</ActiveLink>
-      </li>
+
+      {user && (
+        <li className='pr-4 text-lg font-semibold'>
+          <ActiveLink to='/blog'>Blog</ActiveLink>
+        </li>
+      )}
 
       {user && (
         <>

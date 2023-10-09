@@ -7,6 +7,7 @@ import Register from '../components/Register/Register'
 import PrivateRoute from './PrivateRoute'
 import Profile from '../Pages/Profile/Profile'
 import About from '../components/About/About'
+import Blog from '../Pages/Blog/Blog'
 
 import ErrorPage from '../Pages/ErrorPage/ErrorPage'
 
@@ -59,6 +60,14 @@ const Route = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Profile />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: '/blog',
+        element: (
+          <PrivateRoute>
+            <Blog />
           </PrivateRoute>
         ),
       },
