@@ -1,0 +1,31 @@
+.navbar {
+  max-width: 1660px;
+  padding: 1% 9.375rem;
+  margin: 0 auto;
+}
+.navbar ul li :hover {
+  color: #FF3811;
+}
+.navbar .btn-outline {
+  border: 1.5px solid #FF3811;
+  color: #FF3811;
+  cursor: pointer;
+}
+.navbar .btn-outline:hover {
+  color: #fff;
+  background-color: #FF3811;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.menu-compact {
+  position: absolute;
+  top: 2.6rem !important;
+  right: -2.5rem;
+}
+
+.indicator-item {
+  right: 8px !important;
+}/*# sourceMappingURL=Navbar.css.map */

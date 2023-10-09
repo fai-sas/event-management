@@ -6,14 +6,15 @@ import Login from '../components/Login/Login'
 import Register from '../components/Register/Register'
 import PrivateRoute from './PrivateRoute'
 import Profile from '../Pages/Profile/Profile'
+import About from '../components/About/About'
 
-// import ErrorPage from '../Pages/ErrorPage/ErrorPage'
+import ErrorPage from '../Pages/ErrorPage/ErrorPage'
 
 const Route = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -23,7 +24,12 @@ const Route = createBrowserRouter([
 
       {
         path: '/services',
-        element: <ServicePage />,
+        element: (
+          <PrivateRoute>
+            {' '}
+            <ServicePage />
+          </PrivateRoute>
+        ),
         loader: () => fetch('/events.json'),
       },
       {
@@ -43,6 +49,10 @@ const Route = createBrowserRouter([
       {
         path: '/register',
         element: <Register />,
+      },
+      {
+        path: '/about',
+        element: <About />,
       },
       {
         path: '/profile',

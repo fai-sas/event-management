@@ -15,15 +15,17 @@ const Services = () => {
 
   return (
     <>
-      <div className="services-section">
+      <div className='services-section'>
         <SectionHeader
-          title={"Our Service Segments"}
-          subtitle={"Service"}
-          description={"the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."}
+          title={'Our Service Segments'}
+          subtitle={'Service'}
+          description={
+            'We pride ourselves on innovation, creativity, and professionalism. Our mission is to provide tailored event solutions that align with your goals and objectives. From cutting-edge technology to top-notch speakers, we bring excellence to every aspect of your corporate event.'
+          }
           center={true}
         ></SectionHeader>
 
-        <div className='services-container mb-4'>
+        <div className='mb-4 services-container'>
           {cards.map((card) => {
             return <Service key={card.id} card={card}></Service>
           })}

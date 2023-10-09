@@ -1,34 +1,45 @@
-import React from 'react';
 import './About.css'
-import img1 from '../../assets/event-management.jpeg';
-import img2 from '../../assets/Events Management Philippines.jpg';
-import SectionHeader from '../SectionHeader/SectionHeader';
+import img1 from '../../assets/event-management.jpeg'
+import img2 from '../../assets/Events Management Philippines.jpg'
+import SectionHeader from '../SectionHeader/SectionHeader'
 
 const About = () => {
-    return (
-        <div className='about my-14'>
-            <div className="about-left">
-                <div className="big-screen">
-                    <img className='mechanic-img shadow-xl' src={img1} alt="" />
-                    <img className='parts-img shadow-xl' src={img2} alt="" />
-                </div>
-            </div>
-
-            <div className="about-right text-left">
-                <div className="section-title">
-                    <SectionHeader
-                        title={"We are qualified & of experience in this field"}
-                        subtitle={"About Us"}
-                        center={false}
-                    ></SectionHeader>
-                </div>
-                <p className='description'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                <p className='description'>the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-
-                <button className="btn shadow-md my-4 text-white">Get More Info</button>
-            </div>
+  return (
+    <div className='py-8 about my-14'>
+      <div className='about-left'>
+        <div className='big-screen'>
+          <img className='shadow-xl mechanic-img' src={img1} alt='' />
+          <img className='shadow-xl parts-img' src={img2} alt='' />
         </div>
-    );
-};
+      </div>
 
-export default About;
+      <div className='text-left about-right'>
+        <div className='section-title'>
+          <SectionHeader
+            title={'We are qualified & of experience in this field'}
+            subtitle={'About Us'}
+            center={false}
+          ></SectionHeader>
+        </div>
+        <p className='description'>
+          We are passionate about creating exceptional corporate events that
+          leave a lasting impact. With years of experience in event management,
+          we specialize in curating conferences, seminars, and corporate
+          gatherings that inspire, educate, and connect professionals from
+          diverse industries.
+        </p>
+        <p className='description'>
+          Our dedicated team of event planners is committed to delivering
+          seamless experiences that exceed your expectations. Whether you're
+          hosting a large-scale corporate summit, an intimate business
+          conference, or an executive retreat, we pay meticulous attention to
+          every detail to ensure your event's success.
+        </p>
+
+        <button className='my-4 text-white shadow-md btn'>Get More Info</button>
+      </div>
+    </div>
+  )
+}
+
+export default About

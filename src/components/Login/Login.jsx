@@ -4,6 +4,7 @@ import { AuthContext } from '../../providers/AuthProvider'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
+import { FcGoogle } from 'react-icons/fc'
 
 const Login = () => {
   const {
@@ -102,8 +103,11 @@ const Login = () => {
               </Link>{' '}
             </p>
             <p>
-              <button onClick={handleGoogleSignIn} className='btn btn-ghost'>
-                Google
+              <button
+                onClick={handleGoogleSignIn}
+                className='w-full btn btn-outline '
+              >
+                <FcGoogle className='text-3xl' /> Login With Google
               </button>
             </p>
           </div>
