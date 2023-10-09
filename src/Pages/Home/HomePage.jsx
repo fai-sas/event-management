@@ -7,7 +7,7 @@ import Services from '../../components/Services/Services'
 
 const HomePage = () => {
   return (
-    <div className=''>
+    <div className='overflow-hidden'>
       <Banner />
       <About></About>
       <Services />

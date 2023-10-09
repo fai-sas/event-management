@@ -15,7 +15,7 @@ const Services = () => {
 
   return (
     <>
-      <div className='services-section'>
+      <div className='container mx-auto services-section'>
         <SectionHeader
           title={'Our Service Segments'}
           subtitle={'Service'}

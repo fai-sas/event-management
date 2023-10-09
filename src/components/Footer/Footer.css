@@ -8,7 +8,7 @@
   padding: 6rem 9.375rem;
 }
 .footer-container .footer div p {
-  width: 300px;
+  width: 20rem;
   margin-top: 1.5rem !important;
   font-weight: 500 !important;
 }
@@ -20,7 +20,7 @@
 }
 .footer-container .footer div .social-links a {
   color: #efefef;
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   padding: 10px;
   margin-right: 0.75rem;
   border-radius: 50%;
@@ -39,7 +39,7 @@
   font-size: 1.1rem !important;
 }
 .footer-container .footer div .link:hover {
-  color: #FF3811 !important;
+  color: #ff3811 !important;
   text-decoration: none;
   transform: translateX(5px);
 }
@@ -53,5 +53,5 @@
   color: #fff;
 }
 .footer-container .developer-sign a:hover {
-  color: #FF3811;
-}/*# sourceMappingURL=Footer.css.map */
+  color: #ff3811;
+} /*# sourceMappingURL=Footer.css.map */

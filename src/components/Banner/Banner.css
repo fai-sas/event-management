@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Raleway:wght@300;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Raleway:wght@300;600&display=swap');
+
 .banner-container {
-  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(85, 76, 76, 0.11)), url("../../assets/event-management-2.jpeg");
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgba(85, 76, 76, 0.11)
+    ),
+    url('../../assets/event-management-2.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,27 +15,33 @@
   padding: 10% 0;
   margin-bottom: 8%;
 }
+
 .banner-container .banner-content {
   width: 80%;
   margin: 0 auto;
 }
+
 .banner-container .banner-content p {
   letter-spacing: 0.25rem;
 }
+
 .banner-container .banner-content .action-btns :nth-child(1) {
-  background-color: #FF3811;
+  background-color: #ff3811;
   border: 1px solid transparent;
   cursor: pointer;
 }
+
 .banner-container .banner-content .action-btns :nth-child(1):hover {
   background-color: #c71007;
 }
+
 .banner-container .banner-content .action-btns :nth-child(2) {
-  color: #FF3811;
-  border: 2px solid #FF3811;
+  color: #ff3811;
+  border: 2px solid #ff3811;
 }
+
 .banner-container .banner-content .action-btns :nth-child(2):hover {
   color: #f9f9f9;
-  background-color: #FF3811;
-  border: 2px solid #FF3811;
-}/*# sourceMappingURL=Banner.css.map */
+  background-color: #ff3811;
+  border: 2px solid #ff3811;
+} /*# sourceMappingURL=Banner.css.map */

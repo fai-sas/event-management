@@ -1,5 +1,5 @@
 .parent-container {
-  max-width: 1660px;
+  /* max-width: 1660px; */
   padding: 0 9.375rem;
   margin: 0 auto;
 }
@@ -21,7 +21,7 @@
 }
 .parent-container .contact .contact-container .title {
   font-size: 0.8rem;
-  color: #A2A2A2;
+  color: #a2a2a2;
 }
 .parent-container .contact .contact-container .desc {
   font-size: 1.25rem;
@@ -69,4 +69,4 @@
     flex-wrap: wrap;
     gap: 2rem;
   }
-}/*# sourceMappingURL=Contact.css.map */
+} /*# sourceMappingURL=Contact.css.map */

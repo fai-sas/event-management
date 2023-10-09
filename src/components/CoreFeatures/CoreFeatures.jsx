@@ -1,4 +1,3 @@
-import React from 'react'
 import './CoreFeatures.css'
 
 import team from '../../assets/icons/team.svg'
@@ -17,7 +16,7 @@ const CoreFeatures = () => {
       data-aos='zoom-in'
       data-aos-easing='ease-out-cubic'
       data-aos-duration='2000'
-      className='core-features my-14'
+      className='container mx-auto core-features my-14'
     >
       <SectionHeader
         title={'Why Choose Us'}

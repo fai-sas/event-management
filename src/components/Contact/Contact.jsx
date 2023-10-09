@@ -1,4 +1,3 @@
-import React from 'react'
 import './Contact.css'
 import schedule from '../../assets/icons/001-timetable.png'
 import call from '../../assets/icons/call.png'
@@ -26,7 +25,7 @@ const Contact = () => {
       data-aos-offset='300'
       data-aos-easing='ease-in-sine'
       data-aos-duration='1500'
-      className='parent-container'
+      className='container mx-auto parent-container'
     >
       <div className='contact my-14' id='contact'>
         {contactInfo.map((single) => (

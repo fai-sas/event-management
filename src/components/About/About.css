@@ -1,5 +1,5 @@
 .about {
-  max-width: 1660px;
+  /* max-width: 1660px; */
   padding: 0 9.375rem;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@
   margin: 1.2rem 0;
 }
 .about .about-right .btn {
-  background-color: #FF3811;
+  background-color: #ff3811;
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -84,4 +84,4 @@
   .about {
     flex-direction: column-reverse;
   }
-}/*# sourceMappingURL=About.css.map */
+} /*# sourceMappingURL=About.css.map */

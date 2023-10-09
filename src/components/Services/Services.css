@@ -1,5 +1,5 @@
 .services-section {
-  max-width: 1660px;
+  /* max-width: 1660px; */
   padding: 0 9.375rem;
   margin: 0 auto 5rem;
 }
@@ -10,4 +10,4 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 2.5rem;
-}/*# sourceMappingURL=Services.css.map */
+} /*# sourceMappingURL=Services.css.map */
