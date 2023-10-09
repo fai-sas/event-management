@@ -5,7 +5,12 @@ import SectionHeader from '../SectionHeader/SectionHeader'
 
 const About = () => {
   return (
-    <div className='py-8 about my-14'>
+    <div
+      data-aos='fade-down-left'
+      data-aos-easing='ease-out-cubic'
+      data-aos-duration='2000'
+      className='py-8 about my-14'
+    >
       <div className='about-left'>
         <div className='big-screen'>
           <img className='shadow-xl mechanic-img' src={img1} alt='' />

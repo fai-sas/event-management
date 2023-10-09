@@ -13,7 +13,12 @@ const CoreFeatures = () => {
     { id: 3, title: '24/7 Support', icon: support },
   ]
   return (
-    <div className='core-features my-14'>
+    <div
+      data-aos='zoom-in'
+      data-aos-easing='ease-out-cubic'
+      data-aos-duration='2000'
+      className='core-features my-14'
+    >
       <SectionHeader
         title={'Why Choose Us'}
         subtitle={'Core Features'}

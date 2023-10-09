@@ -25,7 +25,12 @@ const Services = () => {
           center={true}
         ></SectionHeader>
 
-        <div className='mb-4 services-container'>
+        <div
+          data-aos='flip-down'
+          data-aos-easing='ease-out-cubic'
+          data-aos-duration='2000'
+          className='mb-4 services-container'
+        >
           {cards.map((card) => {
             return <Service key={card.id} card={card}></Service>
           })}
