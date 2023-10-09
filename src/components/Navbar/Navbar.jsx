@@ -135,9 +135,9 @@ const Navbar = () => {
           {navLinks}
           {user ? (
             <>
-              <li className='px-4 text-lg font-bold'>
+              {/* <li className='px-4 text-lg font-bold'>
                 <Link to='#'>{user?.displayName}</Link>
-              </li>
+              </li> */}
               <li
                 onClick={handleLogOut}
                 className='px-4 text-lg font-bold cursor-pointer'
